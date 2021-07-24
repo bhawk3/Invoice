@@ -1,0 +1,18 @@
+table, th, tr, td {
+    border: 1px solid black;
+    padding: 10px;
+    }
+
+#design {
+    background-color: rgb(187, 187, 206);
+
+}
+
+#deployment {
+    background-color: rgb(187, 187, 206);
+}
+
+td {
+    padding-right: 190px;
+    text-align: justify;
+}
