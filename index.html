@@ -17,28 +17,24 @@
 <body>
        <div class="container">
 
-           <div class="row mt-5">
+           <div class="row align-items-center">
                <!-- img col-->
-               <div class="col-8">
-                   <div class=" " height="50%" width="50%"   >
-                        <img src="img/IdeaFoundryLogo.png" alt="logo image">
-                   </div>
+               <div class="col-sm-7 d-flex justify-content-start">
+                        <img src="img/IdeaFoundryLogo.png" title="Logo image" alt="logo image">
                </div>
                <!-- client number col-->
-               <div class="col">
-                   <div class="pt-5 mt-5 float-end">
+               <div class="col-sm-5 d-flex justify-content-sm-end justify-content-start">
                         <b>Client No: 4908</b>
-                   </div>
                </div>
            </div>
 
            <hr>
            <!--date row -->
-           <div class="flex-row">
-               <div class="float-start" >
+           <div class="row row-cols-1 row-cols-sm-2">
+               <div class="col-sm-6 d-flex justify-content-start" >
                     <b>Date:</b> 5/12/2019
                </div>
-               <div class="float-right text-end">
+               <div class="col-sm-6 d-flex justify-content-sm-end justify-content-start">
                 <b>Invoice No:</b> 19005
                </div> 
                
@@ -46,81 +42,92 @@
            <hr>
            
             <!-- invoice to and pay to row -->
-           <div class="flex-row ">               
-                <div class="float-end" >
-                    <b>Invoice To:</b> <br>
-                    Mark Davis <br>
-                    3333 Al Davis Way <br>
-                    Las Vegas, NV 89118
+           <div class="row row-cols-1 row-cols-md-2 ">               
+                <div class="col-6 d-flex justify-content-start" >
+                    <div>
+                        <b>Invoice To:</b> <br>
+                    <address>
+                        Mark Davis <br>
+                        3333 Al Davis Way <br>
+                        Las Vegas, NV 89118
+                    </address>
+                    
+                    </div>
+                    
                 </div>
-                <div class="">
-                    <b>Pay To:</b> <br>
-                    Idea Foundry, Inc. <br>
+                <div class=" col-6 d-flex justify-content-end">
+                    <div>
+                        <b>Pay To:</b> <br>
+                    <address>
+                         Idea Foundry, Inc. <br>
                     2705 N. Enterprise St. <br>
                     Kernersville, NC 27284 
+                    </address>
+                    </div>
+                    
+                   
                 </div>
                 
            </div> 
            
           <hr>
            <!-- start of the data-->
-           <div class="row">
-               
-                <div class="col"> 
-                    <table> 
-                        <thead>
-                             <tr id="service">
+           <div class="row table-responsive">
+                    <table class="table table-striped table-bordered"> 
+                        <thead class="thead-dark">
+                            <tr>
                             <th>Service</th>
-                            <th> Description</th>
+                            <th>Description</th>
                             <th>Rate</th>
                             <th>QTY</th>
-                            <th>Amount</th>
+                            <th class="text-end">Amount</th>
                         </tr>
                         </thead>
-                       <tbody >
-                           <tr id="design">
-                            <td>Design</td>
-                            <td>Website Design</td>
-                            <td>$60.00</td>
-                            <td>10</td>
-                            <td>$600.00</td>
-                        </tr>
-                        <tr id="development">
-                            <td>Development</td>
-                            <td>Website Development</td>
-                            <td>$150.00</td>
-                            <td>10</td>
-                            <td>$1500.00</td>
-                        </tr>
-                        <tr id="deployment">
-                            <td>Deployment</td>
-                            <td>Deployment and Hosting</td>
-                            <td>$450.00</td>
-                            <td>1</td>
-                            <td>$450.00</td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">Sub Total:</td>
-                            <td>$2550.00</td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">Tax:</td>
-                            <td>$0.00</td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">Total:</td>
-                            <td>$2550.00</td>
-                        </tr>
-                        
-                            <caption> <b>NOTE:</b> This is computer generated 
-                            receipt and does not require physical signature </caption>
-                        
-                    </tbody>
-                        
+                        <tbody >
+                            <tr>
+                                <td>Design</td>
+                                <td>Website Design</td>
+                                <td>$60.00</td>
+                                <td>10</td>
+                                <td class="text-end">$600.00</td>
+                            </tr>
+                            <tr>
+                                <td>Development</td>
+                                <td>Website Development</td>
+                                <td>$150.00</td>
+                                <td>10</td>
+                                <td class="text-end">$1500.00</td>
+                            </tr>
+                            <tr>
+                                <td>Deployment</td>
+                                <td>Deployment and Hosting</td>
+                                <td>$450.00</td>
+                                <td>1</td>
+                                <td class="text-end">$450.00</td>
+                            </tr> 
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Sub Total:</td>
+                                <td class="text-end">$2550.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Tax:</td>
+                                <td class="text-end">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Total:</td>
+                                <td class="text-end">$2550.00</td>
+                            </tr>
+                                <caption> <b>NOTE:</b> This is computer generated 
+                                receipt and does not require physical signature </caption>
+                            
+                        </tfoot>
                 
 
-                </table>
-            </div>
+                    </table>
+            
            
            </div>
 
